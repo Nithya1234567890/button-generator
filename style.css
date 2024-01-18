@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&family=Dancing+Script:wght@600;700&family=Edu+TAS+Beginner:wght@500&family=Gabarito&family=Hedvig+Letters+Sans&family=Lato:ital,wght@0,700;1,700&family=Poppins&family=Raleway&family=Roboto+Condensed&family=Roboto+Slab:wght@300;400&family=Ubuntu:ital@1&display=swap");
+
+* {
+  font-family: "Balsamiq Sans", sans-serif;
+}
+body {
+  background: url("http://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMGRhcmt8fDB8fHw&ixlib=rb-1.2.1&q=80&w=1080")
+    no-repeat center center/cover;
+}
+h1 {
+  font-family: "dancing script", cursive;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 800;
+  color: aqua;
+}
+
+#container {
+  width: 60%;
+  margin: 20px auto;
+  border: 2px solid gray;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 10px aqua;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #141414;
+  color: white;
+  font-size: large;
+}
+
+.line {
+  width: 90%;
+  margin: 30px;
+  height: 2px;
+  background-color: gray;
+  margin: auto;
+}
+
+#generated-btn {
+  display: block;
+  margin: 20px auto;
+  padding-top: 1;
+  padding-right: 6;
+  padding-bottom: 1;
+  padding-left: 6;
+  font-size: large;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 35px;
+}
+input[type='text'],input[type='number'],input[type=''] {
+  width: 75px;
+  padding: 10px;
+  font-size: large;
+  outline: none;
+}
+#generated-btn,
+#generate {
+  height: 50px;
+  border: 2px solid #3c3939;
+  background-color: #00ffff;
+  border-radius: 9px;
+  cursor: pointer;
+}
+#generate:hover {
+  background-color: #141414;
+  border: 2px solid aqua;
+  color: aqua;
+}
+#pop-up{
+  position: absolute;
+  display: block;
+  width: 35%;
+  top:10%;
+  left: 30%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px black;
+  background-color: white;
+  color: black;
+  padding: 30px;
+  transition: all .5s;
+  transform: translateY(-550px);
+  display: none;
+  opacity: 1;
+}
+.message h1{
+  text-align: center;
+  color: #00ffff;
+  font-family: 'dancing script',cursive;
+  margin-top: 0;
+}
+.message h2{
+  color: coral;
+  font-family: cursive;
+}
+#html-code{
+  margin-bottom: 10px;
+}
+#close{
+  text-align: right;
+}
+#close:hover{
+  cursor: pointer;
+  color:gray;
+}
+@media (max-width:800px){
+  #container{
+    width: 90%;
+  }
+}
+@media (max-width:600px){
+  input{
+    margin: 20px;
+  }
+}
+@media (max-width:500px){
+  input{
+    margin: 10px;
+  }
+}

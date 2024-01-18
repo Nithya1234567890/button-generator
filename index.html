@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Button Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="">Button Generator</h1>
+    <div id="container">
+        <div class="generated-btn">
+            <input type="button" id="generated-btn" value="Default Label">
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="btn-label">
+                <label for="btn-label">Button Label:</label>
+                <input id="btn-label" type="text">
+            </div>
+            <div class="font-size">
+                <label for="font-size">Font Size:</label>
+                <input id="font-size" type="number">
+            </div>
+            <div class="font-color">
+                <label for="font-color">Font Color:</label>
+                <input id="font-color" type="text" class="jscolor" value="000000">
+            </div>
+        </div>
+        <div class="row">
+            <div class="padding">
+                <label for="padding">Padding Top-Right-Bottom-Left:</label><br>
+                <input id="padding-top" type="number">-
+                <input id="padding-right" type="number">-
+                <input id="padding-bottom" type="number">-
+                <input id="padding-left" type="number">
+            </div>
+            <div class="bg-color">
+                <label for="bg-color">Back Ground Color:</label>
+                <input type="text" class="jscolor" value="00ffff" id="bg-color">
+            </div>
+        </div>
+        <div class="row">
+            <div class="border-color">
+                <label for="border-color">Border Color:</label>
+                <input type="text" class="jscolor" value="3c3939" id="border-color">
+            </div>
+            <div class="border-width">
+                <label for="border-width">Border Width:</label>
+                <input type="number" id="border-width">
+            </div>
+            <div class="border-radius">
+                <label for="border-radius">Border Radius:</label>
+                <input type="number" id="border-radius">
+            </div>
+        </div>
+        <div class="row">
+            <input type="button" value="Generate Code" id="generate">
+        </div>
+        <div>
+        <div id="pop-up">
+            <div class="message">
+                <div id="close">&times;</div>
+                <h1>Code</h1>
+                <h2>html</h2>
+                <div id="html-code">
+                    html
+                </div>
+                <h2>css</h2>
+                <div id="css-code">
+                    css
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.0.4/jscolor.js"></script>
+</body>
+
+</html>
